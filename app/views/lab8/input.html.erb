@@ -1,0 +1,6 @@
+<%= form_tag("output", :method => "get",  :class => 'text') do %>
+    <%= label_tag("Введите n:") %>
+    <%= text_field_tag(:n) %> <br/>
+    <br/>
+    <%= submit_tag("Вычислить") %>
+<% end %>

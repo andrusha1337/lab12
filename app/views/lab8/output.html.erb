@@ -1,0 +1,18 @@
+<div class="text">
+<% if @result.empty? %>
+  <p>Таких чисел нет</p>
+<% else %>
+  <p>Числа Армстронга:</p>
+  <table border="1" width="100px" align="center">
+    <% @result.each do |x| %>
+    <tr class="cell">
+      <td class="cell">
+        <%= x %>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+<br/>
+<% end %>
+  <%= button_to "Назад", 'input', :method => "get"%>
+</div>
